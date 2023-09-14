@@ -1,0 +1,15 @@
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/bin/Debug/net7.0/MainMenu
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/bin/Debug/net7.0/MainMenu.deps.json
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/bin/Debug/net7.0/MainMenu.runtimeconfig.json
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/bin/Debug/net7.0/MainMenu.dll
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/bin/Debug/net7.0/MainMenu.pdb
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.csproj.AssemblyReference.cache
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.AssemblyInfoInputs.cache
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.AssemblyInfo.cs
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.csproj.CoreCompileInputs.cache
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.dll
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/refint/MainMenu.dll
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.pdb
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/MainMenu.genruntimeconfig.cache
+/Users/jessiedaniel/Projects/MainMenu/MainMenu/obj/Debug/net7.0/ref/MainMenu.dll
