@@ -1,0 +1,15 @@
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.csproj.AssemblyReference.cache
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.AssemblyInfoInputs.cache
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.AssemblyInfo.cs
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.csproj.CoreCompileInputs.cache
+/Users/jessiedaniel/Projects/excersice4/excersice4/bin/Debug/net7.0/excersice4
+/Users/jessiedaniel/Projects/excersice4/excersice4/bin/Debug/net7.0/excersice4.deps.json
+/Users/jessiedaniel/Projects/excersice4/excersice4/bin/Debug/net7.0/excersice4.runtimeconfig.json
+/Users/jessiedaniel/Projects/excersice4/excersice4/bin/Debug/net7.0/excersice4.dll
+/Users/jessiedaniel/Projects/excersice4/excersice4/bin/Debug/net7.0/excersice4.pdb
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.dll
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/refint/excersice4.dll
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.pdb
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/excersice4.genruntimeconfig.cache
+/Users/jessiedaniel/Projects/excersice4/excersice4/obj/Debug/net7.0/ref/excersice4.dll
