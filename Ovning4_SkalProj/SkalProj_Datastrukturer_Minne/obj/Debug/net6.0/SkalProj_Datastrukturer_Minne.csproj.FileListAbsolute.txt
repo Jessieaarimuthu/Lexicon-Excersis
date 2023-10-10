@@ -1,0 +1,15 @@
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/bin/Debug/net6.0/SkalProj_Datastrukturer_Minne
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/bin/Debug/net6.0/SkalProj_Datastrukturer_Minne.deps.json
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/bin/Debug/net6.0/SkalProj_Datastrukturer_Minne.runtimeconfig.json
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/bin/Debug/net6.0/SkalProj_Datastrukturer_Minne.dll
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/bin/Debug/net6.0/SkalProj_Datastrukturer_Minne.pdb
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.csproj.AssemblyReference.cache
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.AssemblyInfoInputs.cache
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.AssemblyInfo.cs
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.csproj.CoreCompileInputs.cache
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.dll
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/refint/SkalProj_Datastrukturer_Minne.dll
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.pdb
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/SkalProj_Datastrukturer_Minne.genruntimeconfig.cache
+/Users/jessiedaniel/Projects/Ovning4_SkalProj/SkalProj_Datastrukturer_Minne/obj/Debug/net6.0/ref/SkalProj_Datastrukturer_Minne.dll
