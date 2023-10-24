@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#062e3f">
+    <link rel="stylesheet" href="Style.css">
+    <title>TO DO LIST</title>
+
+</head>
+
+<body>
+    <div id = "header">
+        <div class="flexrow-container">
+            <div class="standard-theme theme-selector"></div>
+            <div class="light-theme theme-selector"></div>
+            <div class="darker-theme theme-selector"></div>
+        </div>
+        <h1 id="title">TO Do list<div id="border"></div></h1>
+    </div>
+
+  <div id="form">
+        <form>
+            <input class="todo-input" type="text" placeholder="Add a task.">
+            <button class="todo-btn" type="submit">Add</button>
+        </form>
+    </div>
+    <div>
+        <p><span id="datetime"></span></p>
+        </div>
+
+  <div id="myUnOrdList">
+    <ul class="todo-list"></ul>
+    <div class="todo">
+        Added to the List:
+    </div>
+    </div>
+    <li></li>
+        <button>Delete</button>
+        <button>Check</button>
+    <script src="Script.js"></script>
+</body>
+</html>
