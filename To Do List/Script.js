@@ -1,162 +1,65 @@
+const taskList = document.getElementById("task-list");
+      const addTaskForm = document.getElementById("add-task-form");
+      const newTaskInput = document.getElementById("new-task-input");
 
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
-const toDoInput = document.querySelector('.todo-input');
-const toDoBtn = document.querySelector('.todo-btn');
-const toDoList = document.querySelector('.todo-list');
-const standardTheme = document.querySelector('.standard-theme');
-const lightTheme = document.querySelector('.light-theme');
-const darkerTheme = document.querySelector('.darker-theme');
+      let tasks = [];
 
+      function renderTasks() {
+        taskList.innerHTML = "";
 
-toDoBtn.addEventListener('click', addToDo);
-toDoList.addEventListener('click', deletecheck);
-document.addEventListener("DOMContentLoaded", getTodos);
-standardTheme.addEventListener('click', () => changeTheme('standard'));
-lightTheme.addEventListener('click', () => changeTheme('light'));
-darkerTheme.addEventListener('click', () => changeTheme('darker'));
+        for (let i = 0; i < tasks.length; i++) {
+          const task = tasks[i];
 
+          const taskElement = document.createElement("li");
+          taskElement.className = "task";
 
-let savedTheme = localStorage.getItem('savedTheme');
-savedTheme === null ?
-    changeTheme('standard'): changeTheme(localStorage.getItem('savedTheme'));
+          const checkboxElement = document.createElement("input");
+          checkboxElement.type = "checkbox";
+          checkboxElement.checked = task.completed;
 
+          const textInputElement = document.createElement("input");
+          textInputElement.type = "text";
+          textInputElement.value = task.text;
 
-function addToDo(event) 
-{
-    event.preventDefault();
-    const toDoDiv = document.createElement("div");
-    toDoDiv.classList.add('todo', `${savedTheme}-todo`);
-    const newToDo = document.createElement('li');
-    if (toDoInput.value === '') 
-    {
-            alert("You must write something!");
-        } 
-    else 
-    {
-        newToDo.innerText = toDoInput.value;
-        newToDo.classList.add('todo-item');
-        toDoDiv.appendChild(newToDo);
-        savelocal(toDoInput.value);
-        const checked = document.createElement('button');
-        checked.innerHTML = '<i class="fas fa-check"></i>';
-        checked.classList.add('check-btn', `${savedTheme}-button`);
-        toDoDiv.appendChild(checked);
-        const deleted = document.createElement('button');
-        deleted.innerHTML = '<i class="fas fa-trash"></i>';
-        deleted.classList.add('delete-btn', `${savedTheme}-button`);
-        toDoDiv.appendChild(deleted);
-        toDoList.appendChild(toDoDiv);
-        toDoInput.value = '';
-    }
+          const deleteButtonElement = document.createElement("button");
+          deleteButtonElement.textContent = "Delete";
 
-}   
+          taskElement.appendChild(checkboxElement);
+          taskElement.appendChild(textInputElement);
+          taskElement.appendChild(deleteButtonElement);
 
+          taskList.appendChild(taskElement);
 
-function deletecheck(event){
+          checkboxElement.addEventListener("change", () => {
+            task.completed = checkboxElement.checked;
+            renderTasks();
+          });
 
-    const item = event.target;
-    if(item.classList[0] === 'delete-btn')
-    {
-        item.parentElement.classList.add("fall");
-        removeLocalTodos(item.parentElement);
-        item.parentElement.addEventListener('transitionend', function()
-        {
-        item.parentElement.remove();
-        })
-    }
+          textInputElement.addEventListener("change", () => {
+            task.text = textInputElement.value;
+            renderTasks();
+          });
 
-    if(item.classList[0] === 'check-btn')
-    {
-        item.parentElement.classList.toggle("completed");
-    }
+          deleteButtonElement.addEventListener("click", () => {
+            tasks.splice(i, 1);
+            renderTasks();
+          });
+        }
+      }
 
+      addTaskForm.addEventListener("submit", event => {
+        event.preventDefault();
 
-}
-function savelocal(todo)
-{
-    let todos;
-    if(localStorage.getItem('todos') === null) {
-        todos = [];
-    }
-    else {
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
+        const newTaskText = newTaskInput.value.trim();
 
-    todos.push(todo);
-    localStorage.setItem('todos', JSON.stringify(todos));
-}
+        if (newTaskText) {
+          tasks.push({
+            text: newTaskText,
+            completed: false
+          });
 
+          newTaskInput.value = "";
 
-
-function getTodos() {
-   let todos;
-    if(localStorage.getItem('todos') === null) {
-        todos = [];
-    }
-    else {
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
-
-    todos.forEach(function(todo) 
-    {
-        const toDoDiv = document.createElement("div");
-        toDoDiv.classList.add("todo", `${savedTheme}-todo`);
-        const newToDo = document.createElement('li');
-        newToDo.innerText = todo;
-        newToDo.classList.add('todo-item');
-        toDoDiv.appendChild(newToDo);
-        const checked = document.createElement('button');
-        checked.innerHTML = '<i class="fas fa-check"></i>';
-        checked.classList.add("check-btn", `${savedTheme}-button`);
-        toDoDiv.appendChild(checked);
-        const deleted = document.createElement('button');
-        deleted.innerHTML = '<i class="fas fa-trash"></i>';
-        deleted.classList.add("delete-btn", `${savedTheme}-button`);
-        toDoDiv.appendChild(deleted);
-        toDoList.appendChild(toDoDiv);
-    });
-}
-
-function removeLocalTodos(todo)
-{
-    let todos;
-    if(localStorage.getItem('todos') === null) {
-        todos = [];
-    }
-    else {
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
-
-    const todoIndex =  todos.indexOf(todo.children[0].innerText);
-    todos.splice(todoIndex, 1);
-    localStorage.setItem('todos', JSON.stringify(todos));
-}
-
-function changeTheme(color) {
-    localStorage.setItem('savedTheme', color);
-    savedTheme = localStorage.getItem('savedTheme');
-
-    document.body.className = color;
-    color === 'darker' ? 
-        document.getElementById('title').classList.add('darker-title')
-        : document.getElementById('title').classList.remove('darker-title');
-
-    document.querySelector('input').className = `${color}-input`;
-    document.querySelectorAll('.todo').forEach(todo => {
-        Array.from(todo.classList).some(item => item === 'completed') ? 
-            todo.className = `todo ${color}-todo completed`
-            : todo.className = `todo ${color}-todo`;
-    });
-    document.querySelectorAll('button').forEach(button => {
-        Array.from(button.classList).some(item => {
-            if (item === 'check-btn') {
-              button.className = `check-btn ${color}-button`;  
-            } else if (item === 'delete-btn') {
-                button.className = `delete-btn ${color}-button`; 
-            } else if (item === 'todo-btn') {
-                button.className = `todo-btn ${color}-button`;
-            }
-        });
-    });
-}
+          renderTasks();
+        }
+      });
