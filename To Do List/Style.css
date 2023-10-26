@@ -1,21 +1,28 @@
-body {
-    align-items: center;
+#task-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .task {
     display: flex;
-    flex-direction: column;
-    font-family: 'Work Sans', sans-serif;
-    min-height: 100vh;
-    padding-top: 3%;
-}
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
-.standard {
-    background-image: linear-gradient(100deg, #575656, #062e3f);
-    color: #ffdfdb;
-    transition: 0.3s linear;
-    overflow: hidden;
-}
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+  }
 
-.light {
-    background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
-    color: #1a150e;
-    transition: 0.3s linear;
-}
+  .task input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .task button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
